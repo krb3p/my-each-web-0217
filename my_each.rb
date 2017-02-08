@@ -1,3 +1,10 @@
-def my_each # put argument(s) here
-  # code here
+# require 'pry'
+
+def my_each (array)
+  index = 0
+  while index < (array.length) do
+    yield array [index]
+    index += 1
+  end
+  array
 end
